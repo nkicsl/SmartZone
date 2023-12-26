@@ -70,8 +70,9 @@ cp -a $PATH_datasets$/. $PATH_OPTEE$/out-br/target/root/
 
 By simply typing the following command, you can do inference using a pre-trained model.
 ```
-tinylib classifier predict cfg/imagenet1k.data cfg/mobilenet_v1.cfg models/mobilenet_v1.weights data/cat.jpg
+tinylib classifier predict cfg/imagenet1k.data cfg/mobilenet_v1.cfg models/mobilenet_v1.weights data/cat.jpg -mov_size 262144
 ```
+You can adjust the parameter -mov_size to change the size of shared memory
 
 ### File description
 - ``Compiled file/``: Compiled binary files
